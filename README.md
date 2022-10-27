@@ -29,9 +29,9 @@ Download Repo
 [Download Repo](https://github.com/iamchristianani/portfolio/archive/refs/heads/main.zip)
 
 
-## Authors
+## Author
 
-👤 **Author**
+👤 **Christian Ani**
 
 - GitHub: [@iamchristianani](https://github.com/iamchristianani)
 - Twitter: [@kriznode](https://twitter.com/kriznode)
