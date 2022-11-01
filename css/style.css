@@ -375,6 +375,31 @@ a {
   color: #36b37e;
 }
 
+/** CONTACT SECTION **/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  padding: 0 24px;
+}
+
+.contact-box {
+  background-image: url(../img/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 260px;
+  width: 100%;
+}
+
 /** HOVER EFFECTS **/
 
 .work-card-info button:hover,
