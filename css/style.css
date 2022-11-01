@@ -449,14 +449,27 @@ textarea::placeholder {
   border: none;
 }
 
+.footer-icons {
+  margin-top: 30px;
+}
+
+.footer-email {
+  text-align: center;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+}
+
 /** HOVER EFFECTS **/
 
 .work-card-info button:hover,
-.about-content button:hover {
+.about-content button:hover,
+.contact-form-list button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .work-card-info button:active,
-.about-content button:active {
+.about-content button:active,
+.contact-form-list button:active {
   background-color: #008552;
 }
