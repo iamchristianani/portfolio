@@ -33,12 +33,16 @@ a {
   margin: 0;
 }
 
-.navigation ul {
+.mobile-menu {
   list-style: none;
-  margin: 0;
-  padding: 15px 45px 15px 45px;
+  margin: 22px 36px 0 24px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .menu-btn {
@@ -54,7 +58,7 @@ a {
 }
 
 .bold-text {
-  margin-top: 40px;
+  margin-top: 30px;
   font-weight: 700;
   text-align: center;
   font-size: 30px;
@@ -76,14 +80,14 @@ a {
   text-align: center;
   font-style: normal;
   line-height: 28px;
-  padding: 0 40px 0 40px;
+  padding: 0 24px 0 24px;
 }
 
 .social-icons {
   display: flex;
   column-gap: 21px;
   justify-content: center;
-  margin: 0;
+  margin-top: 40px;
   padding-left: 0;
 }
 
@@ -97,7 +101,7 @@ a {
 }
 
 .scroll {
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,7 +264,7 @@ a {
 }
 
 .about-content p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   text-align: center;
@@ -390,13 +394,17 @@ a {
   line-height: 52px;
   letter-spacing: 0;
   padding: 0 24px;
+  color: #172b4d;
 }
 
-.contact-box {
+.contact-box-bg {
   background-image: url(../img/contact-bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 260px;
+}
+
+.contact-box {
   width: 100%;
 }
 
@@ -414,13 +422,10 @@ a {
 }
 
 .input-boxes {
-  width: 300px;
+  width: 327px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-}
-
-.input-box-text {
-  height: 40px;
+  height: 48px;
   padding: 0 0 0 15px;
 }
 
@@ -428,8 +433,8 @@ textarea {
   font-family: 'Inter', sans-serif;
   padding: 12px 0 0 12px;
   color: #091e42;
-  width: 300px;
-  height: 100px;
+  width: 327px;
+  height: 114px;
   border: 1px solid #60c095;
   border-radius: 4px;
 }
@@ -472,4 +477,140 @@ textarea::placeholder {
 .about-content button:active,
 .contact-form-list button:active {
   background-color: #008552;
+}
+
+@media (min-width: 768px) {
+  .desktop-menu {
+    list-style: none;
+    margin: 22px 36px 0 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #344563;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(../img/header-llustration-desktop@2x.png);
+  }
+
+  .bold-text {
+    margin-top: 100px;
+  }
+
+  .small-text {
+    margin-top: 24px;
+    padding: 0 200px 0 200px;
+  }
+
+  .social-icons {
+    margin-top: 30px;
+  }
+
+  .work-card-cont {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .about-content p {
+    padding: 0 180px 0 180px;
+  }
+
+  .about-content {
+    background-image: url(../img/illustration-about-me-desktop.png);
+  }
+
+  .about-card-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-section {
+    flex-direction: row;
+    margin: 100px 0;
+    background-image: url(../img/illustration-contact-me-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .contact-form-list li {
+    width: 100%;
+  }
+
+  .contact-text {
+    padding: 0 20px 0 80px;
+    font-size: 30px;
+  }
+
+  .contact-box {
+    padding: 0 80px 0 20px;
+  }
+
+  .contact-box-bg {
+    background: none;
+  }
+
+  .input-boxes {
+    width: 100%;
+    height: 48px;
+    padding: 0 0 0 15px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .contact-form-list button {
+    padding: 12px 12px;
+  }
+
+  .footer-email {
+    display: none;
+  }
+
+  .footer-icons {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+  }
+}
+
+@media (min-width: 1080px) {
+  .bold-text {
+    margin-top: 186px;
+  }
+
+  .small-text {
+    padding: 0 260px 0 260px;
+  }
+
+  .work-card-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .about-card-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-text {
+    padding: 0 20px 0 134px;
+    font-size: 30px;
+  }
+
+  .contact-box {
+    padding: 0 134px 0 20px;
+  }
 }
