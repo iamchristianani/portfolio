@@ -12,9 +12,14 @@
     <header class="header">
         <nav class="navigation">
             <div class="menu-icon">
-                <ul>
+                <ul class="mobile-menu">
                     <li class="logo"><a href="">Welcome</a></li>
                     <li class="menu-btn"><a href=""><img src="img/hamburger-icon.png" alt="hamburger-icon"></a></li>
+                </ul>
+                <ul class="desktop-menu">
+                    <li>Portfolio</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
             </div>
         </nav>
@@ -28,18 +33,14 @@
                 <h1>I'm a software developer</h1>
             </div>
         </div>
-        <div class="small-text">
-            <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        </div>
-        <div>
-            <ul class="social-icons">
-                <li><a href="https://twitter.com/kriznode"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/anikriz/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-medium"></i></a></li>
-                <li><a href="https://github.com/iamchristianani"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-angellist"></i></a></li>
-            </ul>
-        </div>
+        <p class="small-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/kriznode"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/anikriz/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-medium"></i></a></li>
+            <li><a href="https://github.com/iamchristianani"><i class="fa fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-angellist"></i></a></li>
+        </ul>
         <div class="scroll">
             <div class="scroll-circle">
                 <a href="#"><img src="img/chevron-down.png" alt="down icon"></a>
@@ -187,14 +188,14 @@
     <!-- CONTACT SECTION -->
     <section class="contact-section">
         <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <div class="contact-box">
+        <div class="contact-box contact-box-bg">
             <form action="https://formspree.io/f/myyvbyzo" method="post">
                 <ul class="contact-form-list">
                     <li>
-                        <input type="text" name="name" class="input-boxes input-box-text" maxlength="30" placeholder="Full Name" required>
+                        <input type="text" name="name" class="input-boxes" maxlength="30" placeholder="Full Name" required>
                     </li>
                     <li>
-                        <input type="email" name="email" class="input-boxes input-box-text" placeholder="Email Address" required>
+                        <input type="email" name="email" class="input-boxes" placeholder="Email Address" required>
                     </li>
                     <li>
                         <textarea name="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
@@ -204,24 +205,25 @@
                     </li>
                 </ul>
             </form>
-            <ul class="social-icons footer-icons">
-                <li>
-                    <a href="https://twitter.com/kriznode"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/anikriz/"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-medium"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/iamchristianani"><i class="fa fa-github"></i></a>
-                </li>
-                <li><a href="#"><i class="fa fa-angellist"></i></a></li>
-            </ul>
-            <p class="footer-email">iamchristianani@gmail.com</p>
-
         </div>
     </section>
+    <footer>
+        <ul class="social-icons footer-icons">
+            <li>
+                <a href="https://twitter.com/kriznode"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/anikriz/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-medium"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/iamchristianani"><i class="fa fa-github"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-angellist"></i></a></li>
+        </ul>
+        <p class="footer-email">iamchristianani@gmail.com</p>
+    </footer>
 </body>
 </html>
