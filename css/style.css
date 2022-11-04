@@ -169,6 +169,7 @@ a {
   align-content: flex-end;
   margin: 50px 0 0 0;
   border: 1px solid #d0d9d4;
+  transition: box-shadow 0.5s;
 }
 
 .work-section ul {
@@ -483,6 +484,10 @@ textarea::placeholder {
 .about-content button:active,
 .contact-form-list button:active {
   background-color: #008552;
+}
+
+.work-card:hover {
+  box-shadow: 1px 2px 10px grey;
 }
 
 @media (min-width: 768px) {
