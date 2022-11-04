@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 html,
 body {
   margin: 0;
@@ -89,6 +94,7 @@ a {
   justify-content: center;
   margin-top: 40px;
   padding-left: 0;
+  animation: fadeIn 2s;
 }
 
 .social-icons li {
@@ -163,6 +169,7 @@ a {
   align-content: flex-end;
   margin: 50px 0 0 0;
   border: 1px solid #d0d9d4;
+  transition: box-shadow 0.5s;
 }
 
 .work-section ul {
@@ -307,6 +314,7 @@ a {
   align-items: center;
   margin: 30px 0 20px 0;
   border: 1px solid #c1c7d0;
+  transition: box-shadow 0.5s;
 }
 
 .about-card-logo-1 {
@@ -477,6 +485,14 @@ textarea::placeholder {
 .about-content button:active,
 .contact-form-list button:active {
   background-color: #008552;
+}
+
+.work-card:hover {
+  box-shadow: 1px 2px 10px grey;
+}
+
+.about-card:hover {
+  box-shadow: 1px 2px 10px grey;
 }
 
 @media (min-width: 768px) {
