@@ -314,6 +314,7 @@ a {
   align-items: center;
   margin: 30px 0 20px 0;
   border: 1px solid #c1c7d0;
+  transition: box-shadow 0.5s;
 }
 
 .about-card-logo-1 {
@@ -487,6 +488,10 @@ textarea::placeholder {
 }
 
 .work-card:hover {
+  box-shadow: 1px 2px 10px grey;
+}
+
+.about-card:hover {
   box-shadow: 1px 2px 10px grey;
 }
 
