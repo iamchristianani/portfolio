@@ -22,11 +22,14 @@ To get a local copy up and running follow these simple example steps.
 **``you@your-Pc-name:~$ cd <folder>``**
 
 ### Visit And Open Files
-Visit Website
+Visit Website:
 [Website Link](https://iamchristianani.github.io/portfolio/)
 
-Download Repo
+Download Repo:
 [Download Repo](https://github.com/iamchristianani/portfolio/archive/refs/heads/main.zip)
+
+Portfolio Presentation:
+[Watch Video](https://www.loom.com/share/8c3194bf23b94f5493816ec7821b9f64)
 
 
 ## Author
