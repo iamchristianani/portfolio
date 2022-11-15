@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ad432cd04f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="menu-display" class="mobile-toggler menu-display">
@@ -19,12 +19,14 @@
             <div class="menu-icon">
                 <ul class="mobile-menu">
                     <li class="logo"><a href="">Welcome</a></li>
-                    <li class="menu-btn"><a href=""><img src="img/hamburger-icon.png" alt="Menu Button"></a></li>
+                    <li class="menu-btn" id="menu-btn-1">
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
                 </ul>
                 <ul class="desktop-menu">
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#work-section">Portfolio</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,13 +50,13 @@
         </ul>
         <div class="scroll">
             <div class="scroll-circle">
-                <a href="#"><img src="img/chevron-down.png" alt="Automatic Scroll Down Button"></a>
+                <a href="#work-section"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
 
     <!-- WORK SECTION -->
-    <section class="work-section">
+    <section id="work-section" class="work-section">
         <div class="work-title">
             <h2>My Recent Works</h2>
             <div class="work-title-line"></div>
@@ -142,7 +144,7 @@
     </section>
     
     <!-- ABOUT SECTION -->
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="about-content">
             <h2 class="about-title">About me</h2>
             <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -191,7 +193,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact-section">
+    <section id="contact-section" class="contact-section">
         <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <div class="contact-box contact-box-bg">
             <form action="https://formspree.io/f/myyvbyzo" method="post">
@@ -233,5 +235,6 @@
         </ul>
         <p class="footer-email">iamchristianani@gmail.com</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
