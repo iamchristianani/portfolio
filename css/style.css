@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 html,
@@ -670,4 +675,22 @@ textarea::placeholder {
   color: #67798e;
   float: right;
   padding: 0 38px 0 0;
+}
+
+.mobile-toggler ul {
+  padding: 0;
+}
+
+.mobile-toggler li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  padding: 20px 0 20px 28px;
+}
+
+.mobile-toggler li a {
+  color: #3a4a42;
 }

@@ -4,3 +4,23 @@ const btnBox = document.querySelector('#menu-display');
 const portfolioBtn = document.querySelector('#work-btn');
 const aboutBtn = document.querySelector('#about-btn');
 const contactBtn = document.querySelector('#contact-btn');
+
+btn1.addEventListener('click', () => { 
+  btnBox.classList.toggle('menu-display'); 
+}); 
+
+btn2.addEventListener('click', () => { 
+  btnBox.classList.toggle('menu-display'); 
+}); 
+
+portfolioBtn.addEventListener('click', () => { 
+  btnBox.classList.toggle('menu-display'); 
+}); 
+
+aboutBtn.addEventListener('click', () => { 
+  btnBox.classList.toggle('menu-display'); 
+}); 
+
+contactBtn.addEventListener('click', () => { 
+  btnBox.classList.toggle('menu-display'); 
+}); 
