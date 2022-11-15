@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 html,
@@ -10,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -50,8 +56,8 @@ a {
   display: none;
 }
 
-.menu-btn {
-  margin-top: 5px;
+.menu-btn .fa-bars {
+  font-size: 25px;
 }
 
 .menu-icon .logo {
@@ -107,7 +113,17 @@ a {
 }
 
 .scroll {
-  margin: 30px 0 0 0;
+  margin: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dfe1e6;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,11 +132,6 @@ a {
 .scroll-circle .fa {
   color: black;
   font-size: 22px;
-}
-
-.scroll-circle img {
-  height: auto;
-  width: 50px;
 }
 
 /** WORK SECTION **/
@@ -510,7 +521,10 @@ textarea::placeholder {
     line-height: 20px;
     letter-spacing: 0;
     text-align: center;
-    color: #344563;
+  }
+
+  .desktop-menu li a {
+    color: #3a4a42;
   }
 
   .mobile-menu {
@@ -631,4 +645,64 @@ textarea::placeholder {
   .contact-box {
     padding: 0 134px 0 20px;
   }
+}
+
+.menu-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-toggler {
+  height: 95vh;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu-display {
+  left: -100%;
+}
+
+.mobile-toggler-btn {
+  padding-top: 20px;
+}
+
+.mobile-toggler .fa-xmark {
+  font-size: 25px;
+  color: #67798e;
+  float: right;
+  padding: 0 38px 0 0;
+}
+
+.mobile-toggler ul {
+  padding: 0;
+}
+
+.mobile-toggler li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  padding: 20px 0 20px 28px;
+}
+
+.mobile-toggler li a {
+  color: #3a4a42;
 }

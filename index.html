@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ad432cd04f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div class="menu-overlay menu-display" id="menu-overlay"></div>
+    <div id="menu-display" class="mobile-toggler menu-display">
+        <div class="mobile-toggler-btn">
+            <i class="fa-solid fa-xmark" id="menu-btn-2"></i>
+        </div>
+        <ul>
+            <li id="work-btn"><a href="#work-section">Portfolio</a></li>
+            <li id="about-btn"><a href="#about-section">About</a></li>
+            <li id="contact-btn"><a href="#contact-section">Contact</a></li>
+        </ul>
+    </div>
     <header class="header">
         <nav class="navigation">
             <div class="menu-icon">
                 <ul class="mobile-menu">
                     <li class="logo"><a href="">Welcome</a></li>
-                    <li class="menu-btn"><a href=""><img src="img/hamburger-icon.png" alt="Menu Button"></a></li>
+                    <li class="menu-btn" id="menu-btn-1">
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
                 </ul>
                 <ul class="desktop-menu">
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#work-section">Portfolio</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +48,8 @@
                 <h2>I'm a software developer</h2>
             </div>
         </div>
-        <p class="small-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p class="small-text">I can help you build a product , feature or website Look through some of my work and
+            experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <ul class="social-icons">
             <li><a href="https://twitter.com/kriznode"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.linkedin.com/in/anikriz/"><i class="fa fa-linkedin"></i></a></li>
@@ -43,13 +59,13 @@
         </ul>
         <div class="scroll">
             <div class="scroll-circle">
-                <a href="#"><img src="img/chevron-down.png" alt="Automatic Scroll Down Button"></a>
+                <a href="#work-section"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
 
     <!-- WORK SECTION -->
-    <section class="work-section">
+    <section id="work-section" class="work-section">
         <div class="work-title">
             <h2>My Recent Works</h2>
             <div class="work-title-line"></div>
@@ -135,12 +151,13 @@
             </li>
         </ul>
     </section>
-    
+
     <!-- ABOUT SECTION -->
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="about-content">
             <h2 class="about-title">About me</h2>
-            <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+            <p> I can help you build a product , feature or website Look through some of my work and experience! If you
+                like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <button>Get my Resume</button>
         </div>
         <ul class="about-card-cont">
@@ -186,14 +203,16 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact-section">
-        <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    <section id="contact-section" class="contact-section">
+        <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please
+            get in touch.</h2>
         <div class="contact-box contact-box-bg">
             <form action="https://formspree.io/f/myyvbyzo" method="post">
                 <ul class="contact-form-list">
                     <li>
                         <label for="name" hidden>Name</label>
-                        <input type="text" name="name" class="input-boxes" maxlength="30" placeholder="Full Name" required>
+                        <input type="text" name="name" class="input-boxes" maxlength="30" placeholder="Full Name"
+                            required>
                     </li>
                     <li>
                         <label for="email" hidden>Email Address</label>
@@ -201,7 +220,8 @@
                     </li>
                     <li>
                         <label for="message" hidden>Message</label>
-                        <textarea name="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
+                        <textarea name="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here"
+                            required></textarea>
                     </li>
                     <li>
                         <button>Get in touch</button>
@@ -228,5 +248,7 @@
         </ul>
         <p class="footer-email">iamchristianani@gmail.com</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
