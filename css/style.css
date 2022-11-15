@@ -647,8 +647,18 @@ textarea::placeholder {
   }
 }
 
+.menu-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5E5E5;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
 .mobile-toggler {
-  height: 100%;
+  height: 95vh;
   background-color: #fff;
   width: 100%;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -656,6 +666,7 @@ textarea::placeholder {
   border-bottom-right-radius: 30px;
   transition: all 0.4s ease-in-out;
   position: fixed;
+  z-index: 3;
   left: 0;
   right: 0;
   top: 0;
