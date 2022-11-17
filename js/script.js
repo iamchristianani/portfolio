@@ -113,24 +113,6 @@ function open_modal(projectIndex) {
   show_modal();
 }
 
-// for (let i = 0; i < projects.length; i++) {
-//   console.log(projects[i].name);
-// }
-
-// for (let i = 0; i < projects[0].technologies.length; i++) {
-//   //console.log(projects[0].technologies[i]);
-// }
-
-// const workCardPrLang2 = document.getElementById('work-card-pr-lang');
-// const workCardPrLang = document.createElement('ul');
-// workCardPrLang.classList.add('work-card-pr-lang');
-
-// projects[0].technologies.forEach((lang) => {
-//   let li = document.createElement("li");
-//   li.innerText = lang;
-//   workCardPrLang.appendChild(li);
-// });
-
 for (let items of projects) {
   let list = "";
   for (let items1 of items.technologies) {
@@ -160,20 +142,3 @@ projectButtonList.forEach((button) => {
     console.log(projectId);
   })
 })
-
-//const ulOriginal = document.getElementById('work-card-pr-lang-1');
-//ulOriginal.replaceWith(workCardPrLang);
-
-// for (let i = 0; i < projects.length; i++) {
-//   if (projects[i].id === 'project-1') {
-//     // projects[i].div = document.createElement('div');
-//     // projects[i].div.className = `${projects[i].id}`;
-//     // projects[i].div.innerHTML = projectArray[i];
-//     // workSection.appendChild(projects[i].div);
-//   } else {
-//     // projects[i].div = document.createElement('div');
-//     // projects[i].div.className = `${projects[i].id} projects`;
-//     // projects[i].div.innerHTML = projectArray[i];
-//     // workSection.appendChild(projects[i].div);
-//   }
-// }
