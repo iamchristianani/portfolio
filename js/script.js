@@ -193,13 +193,6 @@ inputField.forEach((input) => {
   });
 });
 
-// inputField.forEach((input) => {
-//   input.addEventListener('input', () => {
-//     storedData[input.name] = input.value;
-//     localStorage.setItem('allData', JSON.stringify(storedData));
-//   });
-// });
-
 const storedForm = JSON.parse(localStorage.getItem('allData'));
 if (storedForm) {
   inputField.forEach((keyItem) => {
