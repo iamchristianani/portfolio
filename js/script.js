@@ -7,6 +7,9 @@ const hamburgerButton = document.querySelector('#hamburger-button');
 const workButton = document.querySelector('#work-btn');
 const aboutButton = document.querySelector('#about-btn');
 const contactButton = document.querySelector('#contact-btn');
+const form = document.querySelector('#contact-me');
+const errorMessage = document.querySelector('#error-message');
+const email = form.elements['email'];
 
 function showMenu() {
   btnBox.classList.toggle('menu-display');
@@ -164,3 +167,18 @@ projectButtonList.forEach((button) => {
     openModal(projectId);
   });
 });
+
+/** FORM VALIDATION */
+
+form.addEventListener('submit', (event) => {
+  if (email.value.toLowerCase() != email.value) {
+    errorMessage.classList.remove('modal-display');
+    event.preventDefault();
+  }
+});
+
+// const oneProject = projects[projectIndex];
+//   let list = '';
+//   oneProject.technologies.forEach((item1) => {
+//     list += `<li>${item1}</li>`;
+//   });

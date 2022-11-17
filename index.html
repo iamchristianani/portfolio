@@ -127,7 +127,7 @@
     <section id="contact-section" class="contact-section">
         <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <div class="contact-box contact-box-bg">
-            <form action="https://formspree.io/f/myyvbyzo" method="post">
+            <form action="https://formspree.io/f/myyvbyzo" method="post" id="contact-me">
                 <ul class="contact-form-list">
                     <li>
                         <label for="name" hidden>Name</label>
@@ -142,7 +142,8 @@
                         <textarea name="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
                     </li>
                     <li>
-                        <button type="button">Get in touch</button>
+                        <button type="submit">Get in touch</button>
+                        <p class="error-message modal-display" id="error-message">**Message not sent. Please type your email address in a lowercase format**</p>
                     </li>
                 </ul>
             </form>
