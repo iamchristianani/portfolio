@@ -469,6 +469,7 @@ textarea::placeholder {
   line-height: 24px;
   color: #fff;
   border: none;
+  width: 130px;
 }
 
 .footer-icons {
@@ -688,6 +689,13 @@ textarea::placeholder {
   display: none;
 }
 
+.error-message {
+  color: #ff6163;
+  font-size: small;
+  padding: 0 20px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .desktop-menu {
     list-style: none;
@@ -756,6 +764,13 @@ textarea::placeholder {
 
   .contact-form-list li {
     width: 100%;
+  }
+
+  ul.contact-form-list li:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .contact-text {
@@ -908,4 +923,11 @@ textarea::placeholder {
 
 .about-card:hover {
   box-shadow: 1px 2px 10px grey;
+}
+
+ul.contact-form-list li:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

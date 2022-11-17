@@ -7,6 +7,9 @@ const hamburgerButton = document.querySelector('#hamburger-button');
 const workButton = document.querySelector('#work-btn');
 const aboutButton = document.querySelector('#about-btn');
 const contactButton = document.querySelector('#contact-btn');
+const form = document.querySelector('#contact-me');
+const errorMessage = document.querySelector('#error-message');
+const { email } = form.elements;
 
 function showMenu() {
   btnBox.classList.toggle('menu-display');
@@ -163,4 +166,13 @@ projectButtonList.forEach((button) => {
     const projectId = parseInt(button.dataset.id, 10) - 1;
     openModal(projectId);
   });
+});
+
+/** FORM VALIDATION */
+
+form.addEventListener('submit', (event) => {
+  if (email.value.toLowerCase() !== email.value) {
+    errorMessage.classList.remove('modal-display');
+    event.preventDefault();
+  }
 });
