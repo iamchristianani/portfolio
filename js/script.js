@@ -176,9 +176,3 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
-
-// const oneProject = projects[projectIndex];
-//   let list = '';
-//   oneProject.technologies.forEach((item1) => {
-//     list += `<li>${item1}</li>`;
-//   });
