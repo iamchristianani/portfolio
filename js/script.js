@@ -8,6 +8,7 @@ const workButton = document.querySelector('#work-btn');
 const aboutButton = document.querySelector('#about-btn');
 const contactButton = document.querySelector('#contact-btn');
 const form = document.querySelector('#contact-me');
+const inputField = document.querySelectorAll('.input-field');
 const errorMessage = document.querySelector('#error-message');
 const { email } = form.elements;
 
@@ -176,3 +177,32 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+/** STORE VALUES LOCALLY */
+
+const storedData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+inputField.forEach((input) => {
+  input.addEventListener('input', () => {
+    storedData[input.name] = input.value;
+    localStorage.setItem('allData', JSON.stringify(storedData));
+  });
+});
+
+// inputField.forEach((input) => {
+//   input.addEventListener('input', () => {
+//     storedData[input.name] = input.value;
+//     localStorage.setItem('allData', JSON.stringify(storedData));
+//   });
+// });
+
+const storedForm = JSON.parse(localStorage.getItem('allData'));
+if (storedForm) {
+  inputField.forEach((keyItem) => {
+    keyItem.value = storedForm[keyItem.name];
+  });
+}
