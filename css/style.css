@@ -574,7 +574,6 @@ textarea::placeholder {
   width: 90vw;
   height: 100%;
   background-color: #fff;
-  border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: grid;
   grid-template-rows: 200px auto;
@@ -585,13 +584,8 @@ textarea::placeholder {
   width: 0.5em;
 }
 
-.modal::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
 .modal::-webkit-scrollbar-thumb {
   background-color: darkgrey;
-  outline: 1px solid slategrey;
 }
 
 .modal-image-box {
@@ -608,9 +602,14 @@ textarea::placeholder {
 
 .modal-close-btn {
   position: absolute;
-  margin: 16px;
   align-self: flex-end;
-  color: #fff;
+  background-color: #ebecf0;
+  border-radius: 8px;
+}
+
+.modal-close-btn i {
+  color: #67798e;
+  padding: 8px 12px;
   font-size: 25px;
 }
 
@@ -704,7 +703,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     column-gap: 32px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0;
@@ -730,6 +729,7 @@ textarea::placeholder {
   .small-text {
     margin-top: 24px;
     padding: 0 200px 0 200px;
+    font-size: 20px;
   }
 
   .social-icons {
@@ -833,14 +833,6 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ebecf0;
-    border-radius: 8px;
-  }
-
-  .modal-close-btn i {
-    color: #67798e;
-    font-size: 25px;
-    padding: 8px 12px;
   }
 
   .modal-text-box {
